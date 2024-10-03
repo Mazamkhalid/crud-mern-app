@@ -8,7 +8,7 @@ const StudentList = ({ students, deleteStudent, setCurrentStudent }) => {
         {students.map((student) => (
           <li key={student._id} style={styles.listItem}>
             <div>
-              <strong>Name:</strong> {student.name}, <strong>Age:</strong> {student.age}, <strong>Email:</strong> {student.email}
+              <strong>Name : </strong> {student.name}, <strong>Age:</strong> {student.age}, <strong>Email:</strong> {student.email}
             </div>
             <div>
               <button onClick={() => setCurrentStudent(student)} style={styles.editButton}>
